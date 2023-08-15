@@ -1,15 +1,13 @@
 from tkinter import *
 from FileUtilities import *
+from UIUtils import *
 
-window = Tk()
-window.title('Conversion Hub')
 
-title = Label(window, text = "Conversion Hub")
-title.pack()
+master = Tk()
+master.title('Conversion Hub')
+master.geometry("350x500")
+master.resizable(False, False)
 
-fileUtils = File()
-browseFileButton = Button(window, text = 'Browse Files', width = 25, command = fileUtils.GetFilePath)
-browseFileButton.pack()
+ui = UI(master = master)
 
-window.mainloop()
-
+master.mainloop()
