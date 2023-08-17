@@ -16,7 +16,3 @@ class File:
     def SplitPath(self):
         self.pathWithoutExtension, self.extension = os.path.splitext(self.path)
         return self.pathWithoutExtension, self.extension
-        
-    def Convert(self):
-        conversionUtils = ConversionUtils(self.path, self.pathWithoutExtension)
-        conversionUtils.ConvertToJPG()
