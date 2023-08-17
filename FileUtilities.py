@@ -11,12 +11,8 @@ class File:
     def GetFilePath(self):
         path = filedialog.askopenfilename(filetypes=[("image", ".png")])
         self.path = path
-
+        return self.path
+    
+    def SplitPath(self):
         self.pathWithoutExtension, self.extension = os.path.splitext(self.path)
-        
-        self.Convert()
-        print(f'file path: {self.path}, path without extension: {self.pathWithoutExtension}, extension: {self.extension}')
-        
-    def Convert(self):
-        conversionUtils = ConversionUtils(self.path, self.pathWithoutExtension)
-        conversionUtils.ConvertToJPG()
+        return self.pathWithoutExtension, self.extension

@@ -9,3 +9,8 @@ class ConversionUtils:
         img = Image.open(self.path)
         rgb_im = img.convert('RGB')
         rgb_im.save(f'{self.pathWithoutExtension}.jpg')
+
+    def ConvertToPDF(self):
+        img = Image.open(self.path)
+        rgb_im = img.convert('RGB')
+        rgb_im.save(f'{self.pathWithoutExtension}.pdf')
