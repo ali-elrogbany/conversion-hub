@@ -9,7 +9,9 @@ class File:
         self.extension = ""
     
     def GetFilePath(self):
-        path = filedialog.askopenfilename(filetypes=[("image", ".png")])
+        # acceptedFileTypes = [("", ".png"), ("", ".jpeg"), ("", ".jpg"), ("", ".pdf")]
+        acceptedFileTypes = [("images", ".png"), ("images", ".jpeg"), ("images", ".jpg")]
+        path = filedialog.askopenfilename(filetypes=acceptedFileTypes)
         self.path = path
         return self.path
     
