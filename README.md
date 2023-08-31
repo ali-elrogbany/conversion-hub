@@ -71,8 +71,4 @@ The Conversion Tool was developed using the following libraries:
 
 Special thanks to the developers and contributors of these open-source libraries.
 
-## Contact
-
-For any inquiries or feedback, please contact [your-email@example.com](mailto:your-email@example.com).
-
 Enjoy using the Conversion Tool!
